@@ -1,20 +1,13 @@
-//var persona = {
-//    nom:"Gobal",
-//    ubicacio:"Aqui",
-//    NumeroDePokemons: 234
-//};
+document.write("-----------DEMO1----------- <br>");
 
-persona.nom = "Nse";
+var date = new Date();
 
-nom = "Antoni";
-ubicacio = "Allá";
-NumeroDePokemons = 285;
+document.write("Valor de l'objecte \"date\" abans de passar-lo per paràmetre i modificar-lo: <br>" + date + "<br>");
 
-NovaPropietat = "Ei";
+function incHour (d) {
+    d.setHours(d.getHours() + 1);
+}
 
-alert("El " + nom + ", I està " + ubicacio + ", i també té " + NumeroDePokemons + " Pokemons");
+incHour(date);
 
-
-delete nom;
-
-alert("El/la " + nom + " ha estat eliminat, I està " + ubicacio + ", i també té " + NumeroDePokemons + " Pokemons, pero diu: " + NovaPropietat);
+document.write("Valor posterior de l'objecte \"date\":<br>" + date + "<br>");
