@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <script language="javascript">
+
+         var adreces = ['http://www.google.com', 'http://www.facebook.com', 'http://www.youtube.com', 'https://techcrunch.com/', 'http://twitter.com/'];
+
+        var maxNum = 6;
+        while(adreces.length > 0){
+            var randNum = getRandomArbitrary(0, maxNum);
+            console.log(randNum);
+
+            window.open(adreces[randNum], '_blank');
+            console.log(adreces[randNum]);
+
+            adreces.splice(randNum, 1);
+            maxNum--;
+        }
+            
+        function getRandomArbitrary(min, max) {
+            return Math.floor(Math.random() * (max - min) + min);
+         }
+
+        </script>
+
+    <h1>Obrint 5 pagines.</h1>
+
+    </body>
+
+</html>

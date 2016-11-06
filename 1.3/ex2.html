@@ -1,0 +1,16 @@
+<html>
+    <body>        
+        <script language="javascript">
+          var dateObj = new Date();
+          var phora = dateObj.getHours() + ' : ' + dateObj.getMinutes() + ' : ' + dateObj.getSeconds();
+            
+          window.onload = function(){
+            document.getElementById("rellotge").innerHTML=phora;
+          } 
+        </script>   
+        
+    <h1>Rellotge digital:</h1>
+        <a id="rellotge"></a>
+    </body>
+
+</html>
